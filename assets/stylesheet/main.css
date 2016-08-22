@@ -1,0 +1,274 @@
+    /*
+  ========================================
+  Start CSS Reset
+  ========================================
+*/
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/*
+  ========================================
+  Custom styles
+  ========================================
+*/
+body {
+  background: #fff;
+  color: #333;
+  font: 300 16px/22px "Lucida Grande", "Lucida Sans Unicode", Helvetica, Arial, Verdana, sans-serif;
+}
+/*
+  ========================================
+  Grid
+  ========================================
+*/
+*, 
+*:before, 
+*:after {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.container {
+	width: 1200px; 
+	margin: auto 0;
+}
+
+/*
+  ========================================
+  Clearfix
+  ========================================
+*/
+.group:before, 
+.group:after {
+  content: "";
+  display: table;
+}
+.group:after {
+  clear: both;
+}
+.group {
+  clear: both;
+  *zoom: 1;
+}
+/*
+  ========================================
+  Typography
+  ========================================
+*/
+h1 {
+	font-size: 52px;
+	line-height: 36px;
+}
+h2 {
+	font-size: 28px;
+	line-height: 40px;
+}
+h3 {
+	font-size: 20px;
+}
+h4 {
+	font-size: 12px;
+}
+h5 {
+	font-size: 10px;
+}
+/*
+  ========================================
+  Links
+  ========================================
+*/
+a {
+	color: #08c;
+	text-decoration: none;
+}
+.primary-nav a {
+	color: #fff;
+}
+/*
+  ========================================
+  Navigation
+  ========================================
+*/
+.primary-nav {
+	width: 65%;
+	margin: 0 auto;
+	position: relative;
+	top: 18px; 
+}
+.primary-nav ul {
+	border: 1px solid #7D7D7D;
+	border-radius: 5px;
+	box-shadow: 0 2px 5px rgba(0,0,0,.2);
+	height: 36px;  
+	background: linear-gradient(to bottom, #8b8b8b, #717171 49%, #5e5e5e 50%, #787878); 
+}
+.primary-nav li {
+	display: inline-block; 
+	text-shadow: 0 -1px 0 rgba(0,0,0,.9);
+	text-align: center;
+	border-right: 1px solid #646464;
+	height: 100%;
+	margin: -4px -10px -9px 5px;
+	padding-top: 5px; 
+	width: 11%;
+}
+.primary-nav li:last-child {
+	border: none;
+}
+.primary-nav li:first-child {
+	border: none;
+}
+.border {
+	border-left: 1px solid #646464;
+}
+.apple-logo {
+	position: absolute;
+	left: 45px;
+	top: 6px;
+	cursor: pointer;
+}
+.search-tab {
+	position: absolute;
+	right: 34px;
+	top: 6px;
+	border: none;
+}
+/*
+  ========================================
+  Hero
+  ========================================
+*/
+.your-verse {
+	width: 1440px;
+	height: 472px;
+	background: url("../images/your_verse_hero.jpg") 100% 100% no-repeat;
+	margin-bottom: 2px;
+	color: #fff;
+}
+.hero-lead {
+	margin: 0 auto;
+	margin-top: 80px;
+	text-align: center;
+}
+.title {
+	margin-bottom: 10px;
+}
+.body {
+	margin-bottom: 28px;
+	margin-left: 180px;
+	margin-right: 180px; 
+}
+/*
+  ========================================
+  Teasers
+  ========================================
+*/
+.teasers {
+	margin-bottom: 20px;
+}
+
+.teasers ul {
+	position: relative;
+	width: 100%;
+	height: 200px;
+	max-width: 1440px;
+	margin: 0 auto;
+}
+.teasers li {
+	position: absolute;
+	cursor: pointer;
+}
+.position-1 {
+	top: 0;
+	left: 0;
+}
+.position-2 {
+	top: 0;
+	left: 367px;
+}
+.position-3 {
+	top: 0;
+	right: 120px;
+}
+.position-4 {
+	top: 0;
+	right: -240px;
+}
+/*
+  ========================================
+  Footer
+  ========================================
+*/
+.footer-primary {
+	display: block;
+	margin-left: 200px;
+	margin-bottom: 85px;
+}
+.nav-footer {
+	float: right;
+	width: 60%;
+}
+.footer-supplemental {
+	float: left;
+	width: 40%;
+}
+.nav-footer li {
+	display: inline-block;
+	margin-left: 15px;
+	padding-left: 10px; 
+	border-left: 1px solid #ccc;
+	line-height: 12px;
+}
+.nav-footer li:first-child {
+	border: none;
+}
+.world-logo {
+	width: 16px;
+	height: 12px; 
+	vertical-align: middle;
+}
